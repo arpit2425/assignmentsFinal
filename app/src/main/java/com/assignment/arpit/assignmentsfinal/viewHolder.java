@@ -16,13 +16,13 @@ public class viewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         mview=itemView;
     }
-    public void setDetail(Context ctx,String Title,String Description)
+    public void setDetail(Context ctx,String Name,String Age)
     {
-        TextView mtitle=(TextView)mview.findViewById(R.id.title);
-        TextView mdescription=(TextView)mview.findViewById(R.id.description);
+        TextView mtitle=(TextView)mview.findViewById(R.id.name);
+        TextView mdescription=(TextView)mview.findViewById(R.id.age);
 //        ImageView mimage=(ImageView)mview.findViewById(R.id.image);
-        mtitle.setText(Title);
-        mdescription.setText(Description);
+        mtitle.setText(Name);
+        mdescription.setText(Age);
 
 //        Picasso.get().load(Image).into(mimage);
 

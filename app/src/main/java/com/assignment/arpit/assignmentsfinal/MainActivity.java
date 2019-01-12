@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mrecycler.setHasFixedSize(true);
         mrecycler.setLayoutManager(new LinearLayoutManager(this));
         mfirebase=FirebaseDatabase.getInstance();
-        mref=mfirebase.getReference("Data");
+        mref=mfirebase.getReference("User");
         mref.keepSynced(true);
     }
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<model,viewHolder> firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<model, viewHolder>(model.class,R.layout.individual_row,viewHolder.class,mref) {
             @Override
             protected void populateViewHolder(viewHolder viewHolder, model model, int position) {
-                viewHolder.setDetail(getApplicationContext(),model.getTitle(),model.getDescription());
+                viewHolder.setDetail(getApplicationContext(),model.getName(),model.getAge());
 
             }
         };

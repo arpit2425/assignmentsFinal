@@ -1,25 +1,25 @@
 package com.assignment.arpit.assignmentsfinal;
 
 public class model {
-    String Title,Description,Image;
+    String Name,Age;
 
-    public String getTitle() {
-        return Title;
+    public String getName() {
+        return Name;
     }
 
-    public void setTitle(String Title) {
-        Title = Title;
+    public void setName(String name) {
+        Name = name;
     }
 
-    public String getDescription() {
-        return Description;
+    public String getAge() {
+        return Age;
     }
 
-    public void setDescription(String Description) {
-        Description = Description;
+    public void setAge(String age) {
+        Age = age;
     }
 
-//    public String getImage() {
+    //    public String getImage() {
 //        return Image;
 //    }
 //
